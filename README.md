@@ -1,2 +1,6 @@
-# TestProject
-This is my test project for Interview
+I have automated 4 scenarios including various test cases as follows:
+1: Validating Mandatory fields for user creation2: successful user creation3: Login validations4: Successful login
+These are included in 2 features files. The framework is using Maven Build, BDD, Cucumber, Java, Selenium, Web driver, Allure reporting, Cucumber reporting, Junit4.The compilation is Java 1.7JRE
+Steps to run on your machine Download in any IDE (I used Eclipse Oxygen)Set up all  your preferences related to maven and Java compiler in eclipseopen port 4444Install Selenium WebdriverDownload Chrome/ IE Driverrun the  test  cases using junit 4 with arguments as below (It is for running on the local machine, not on remote.)               -DEnvironment=Test               -Dbrowser=chrome               -Dwebdriver.chrome.driver=C:/TEMP/chromedriver.ex
+Attached is the Cucumber report (basic format from Master-thoughts) and junit execution all 4 test cases ran in 190seconds.Please download the target file and open index.html it will show all results.Please note Screenshot is also implemented as part of test evidence.the framework also includes allure reporting hence Jenkins - allure report integration can be easily doneAll the pageactionHelper class to work on web elements are completely reusable code and feature file steps can also be used with parameterization.
+
